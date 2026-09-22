@@ -20,6 +20,10 @@ def search():
 def customers():
     return "Customer list"
 
+@app.route("/customers/count")
+def count():
+    return "Customer count: 0"
+
 @app.route("/db")
 def db():
     conn = psycopg2.connect(

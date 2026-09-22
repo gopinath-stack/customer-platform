@@ -12,6 +12,10 @@ def home():
 def health():
     return "healthy"
 
+@app.route("/customers/search")
+def search():
+    return "Customer search working"
+
 @app.route("/db")
 def db():
     conn = psycopg2.connect(

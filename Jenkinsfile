@@ -3,9 +3,9 @@ pipeline {
 
     stages {
         stage('Start') {
-            echo 'Customer Platform Deployment'
+            steps {
+                echo 'Customer Platform Deployment'
             }
-         }
-
+        }
     }
 }
